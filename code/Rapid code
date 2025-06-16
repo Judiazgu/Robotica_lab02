@@ -1,0 +1,174 @@
+MODULE Module1
+        CONST robtarget HOME_tablero:=[[634.233988608,0,540.576628751],[0.258819045,0,0.965925826,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_10:=[[0,300,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[200,300,0],[1,0,0,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[200,0,0],[1,0,0,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40:=[[0,0,0],[1,0,0,0],[0,-2,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget HOME:=[[65.766011392,-50,-210.576628751],[0.965925826,0,-0.258819045,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget J_1:=[[29.939,160.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget J_2:=[[29.939,140.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget J_3:=[[49.939,140.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget J_4:=[[59.939,150.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget J_5:=[[49.939,160.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget J_5z:=[[49.939,160.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget U_1z:=[[29.939,130.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget U_1:=[[29.939,130.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget U_2:=[[49.939,130.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget U_3:=[[59.939,120.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget U_4:=[[49.939,110.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget U_5:=[[29.939,110.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget U_5z:=[[29.939,110.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget A_1z:=[[59.939,100.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A_1:=[[59.939,100.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A_2:=[[29.939,90.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A_3:=[[59.939,80.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A_3z:=[[59.939,80.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A_4z:=[[44.939,80.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A_4:=[[44.939,80.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A_5:=[[44.939,100.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A_5z:=[[44.939,100.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget N_1z:=[[59.939,70.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget N_1:=[[59.939,70.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget N_2:=[[29.939,70.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget N_3:=[[59.939,50.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget N_4:=[[29.939,50.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget N_4z:=[[29.939,50.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget C_1z:=[[89.939,140.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget C_1:=[[89.939,140.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget C_2:=[[89.939,150.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget C_3:=[[104.939,160.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget C_4:=[[119.939,150.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget C_5:=[[119.939,140.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget C_5z:=[[119.939,140.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget R_1z:=[[119.939,130.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget R_1:=[[119.939,130.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget R_2:=[[89.939,130.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget R_3:=[[96.939,120.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget R_4:=[[103.939,130.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget R_5:=[[119.939,110.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget R_5z:=[[119.939,110.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget I_1z:=[[119.939,100.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget I_1:=[[119.939,100.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget I_2:=[[89.939,100.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget I_2z:=[[89.939,100.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget S_1z:=[[89.939,70.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget S_1:=[[89.939,70.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget S_2:=[[89.939,80.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget S_3:=[[96.939,90.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget S_4:=[[103.939,80.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget S_5:=[[111.939,70.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget S_6:=[[119.939,80.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget S_7:=[[119.939,90.745,0],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget S_7z:=[[119.939,90.745,-20],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    PERS tooldata TCP_TOOL:=[TRUE,[[56.34,0,180.263],[0.965925826,0,0.258819045,0]],[1,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata Workobject_1:=[FALSE,TRUE,"",[[0,200,280],[1,0,0,0]],[[700,-150,50],[0,0,1,0]]];
+
+    PROC main()
+        SetDO END_TASK, 0;
+        SetDO DO_01, 0;
+        SetDO DO_02, 0;
+        WHILE TRUE DO
+            IF DI_01=1 THEN
+                SET DO_02;
+            ENDIF
+            IF Sens_01=1 THEN
+                SetDO DO_02,0;
+                SET DO_01;
+                Path_30;
+                Path_40;
+                Path_50;
+                Path_60;
+                Path_70;
+                Path_80;
+                Path_90;
+                Path_100;
+                Path_10;
+                SET END_TASK;
+            ENDIF
+        ENDWHILE
+    ENDPROC
+    PROC Path_20()
+        MoveJ Target_10,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL Target_20,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL Target_30,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL Target_40,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_10()
+    ENDPROC
+    PROC Path_30()
+        MoveJ J_1,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL J_2,v100,z1,TCP_TOOL\WObj:=Workobject_1;
+        MoveL J_3,v100,z1,TCP_TOOL\WObj:=Workobject_1;
+        MoveC J_4,J_5,v100,z1,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ J_5z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+    
+    PROC Path_40()
+        MoveJ U_1z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ U_1,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL U_2,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveC U_3,U_4,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL U_5,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ U_5z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+    
+    PROC Path_50()
+        MoveJ A_1z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ A_1,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL A_2,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL A_3,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ A_3z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ A_4z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ A_4,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL A_5,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ A_5z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_60()
+        MoveJ N_1z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ N_1,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL N_2,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL N_3,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL N_4,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ N_4z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_70()
+        MoveJ C_1z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ C_1,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL C_2,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveC C_3,C_4,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL C_5,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ C_5z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_80()
+        MoveJ R_1z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ R_1,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL R_2,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveC R_3,R_4,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL R_5,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ R_5z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_90()
+        MoveJ I_1z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ I_1,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL I_2,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ I_2z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+    PROC Path_100()
+        MoveJ S_1z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ S_1,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL S_2,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveC S_3,S_4,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveC S_5,S_6,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveL S_7,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ S_7z,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+        MoveJ HOME,v100,z10,TCP_TOOL\WObj:=Workobject_1;
+    ENDPROC
+ENDMODULE
