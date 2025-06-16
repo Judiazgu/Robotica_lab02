@@ -37,4 +37,10 @@ Por ultimo se realizo una revision sobre las caracteristicas y geometricas del f
 
 ## SIMULACION
 
+[![Watch the video](https://img.youtube.com/vi/pgdmwPn4A4Y/maxresdefault.jpg)](https://youtu.be/pgdmwPn4A4Y)
+https://youtu.be/pgdmwPn4A4Y
+
 ## IMPLEMENTACION
+
+[![Watch the video](https://img.youtube.com/vi/s4zlZOmxGf4/maxresdefault.jpg)](https://youtu.be/s4zlZOmxGf4)
+https://youtu.be/s4zlZOmxGf4
